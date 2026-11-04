@@ -21,9 +21,9 @@ def _params(fn):
         sig = inspect.signature(fn)
     except (TypeError, ValueError):
         return None
-    if any(p.kind == p.VAR_KEYWORD for p in sig.parameters.values()):
-        return None                      # accepts **kwargs: pass everything through
-    return set(sig.parameters)
+    # Only named parameters count. A catch-all **kwargs (e.g. st.plotly_chart on Streamlit <1.51 forwards
+    # them to Plotly and warns "keyword arguments have been deprecated") must not receive our new options.
+    return {n for n, p in sig.parameters.items() if p.kind not in (p.VAR_KEYWORD, p.VAR_POSITIONAL)}
 
 
 def _wrap(fn):
