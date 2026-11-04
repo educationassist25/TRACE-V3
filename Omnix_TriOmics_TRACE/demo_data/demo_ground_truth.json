@@ -1,0 +1,66 @@
+{
+  "glycolysis_genes": [
+    "HK1",
+    "HK2",
+    "GPI",
+    "PFKP",
+    "PFKL",
+    "ALDOA",
+    "TPI1",
+    "GAPDH",
+    "PGK1",
+    "PGAM1",
+    "ENO1",
+    "PKM",
+    "LDHA"
+  ],
+  "glycolysis_mets": {
+    "glucose": -0.7,
+    "pyruvate": 0.8,
+    "L-lactate": 1.1,
+    "PEP": 0.6,
+    "fructose-1,6-bisphosphate": 0.6,
+    "glucose-6-phosphate": 0.5
+  },
+  "bottleneck_gene": "ASS1",
+  "bottleneck_mets": {
+    "citrulline": 1.1,
+    "argininosuccinate": -0.9
+  },
+  "fao_genes": [
+    "CPT1A",
+    "CPT2",
+    "ACADM",
+    "ACADVL",
+    "HADHA",
+    "HADHB",
+    "ECHS1",
+    "HADH",
+    "ACAA2",
+    "ACADS"
+  ],
+  "nonabundance_gene": "GLS",
+  "nonabundance_mets": {
+    "glutamine": 0.9,
+    "glutamate": -0.9
+  },
+  "buffered_genes": [
+    "HMGCR",
+    "HMGCS1",
+    "MVK",
+    "PMVK",
+    "MVD",
+    "FDPS",
+    "FDFT1",
+    "SQLE",
+    "LSS",
+    "CYP51A1",
+    "DHCR7",
+    "IDI1"
+  ],
+  "expected": {
+    "throughput_up_pathway": "Glycolysis / Gluconeogenesis",
+    "bottleneck_reaction_name": "L-Citrulline:L-aspartate ligase (AMP-forming)",
+    "nonabundance_reaction_name": "L-glutamine amidohydrolase"
+  }
+}
