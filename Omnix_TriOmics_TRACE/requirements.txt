@@ -1,6 +1,6 @@
 # Same ranges as TRACE v1.1.3 (the version that deploys well). The redesign needs nothing newer:
 # trace_core/compat.py makes the app run on any Streamlit from 1.40 up.
-streamlit>=1.40
+streamlit==1.50.0
 pandas>=2.1
 numpy>=1.26
 scipy>=1.11
